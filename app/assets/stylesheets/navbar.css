@@ -86,6 +86,26 @@ nav ul li a {
     display: none;
 }
 
+.background-fade {
+    margin-top: 20%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    float: left;
+    position: relative;
+    left: -50%;          
+}
+
+.background-size {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.white-color {
+    color: white;        
+}
+
 @media(max-width: 786px) {
 
     .logo {

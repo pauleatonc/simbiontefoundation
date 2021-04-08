@@ -17,11 +17,14 @@
                   </a>
                 </li>
                <li>
-                <a href="#">Hacerca del proyecto
+                <a href="<%= landing_about_path %>">
+                <div>Hacerca del proyecto</div>
                   </a>
                 </li>
                <li>
-                <a href="#">Contacto</a>
+                <a href="<%= landing_contact_path %>">
+                <div>Contacto</div>
+                  </a>
                 </li>
 
                 <% if user_signed_in? %>

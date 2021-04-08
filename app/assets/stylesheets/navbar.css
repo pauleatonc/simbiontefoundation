@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 .background-fade {
-    margin-top: 20%;
+    margin-top: 150px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.3);
     color: white;
@@ -102,6 +102,9 @@ nav ul li a {
     left: 50%;
 }
 
+.text-center {
+    text-align: center;
+}
 .white-color {
     color: white;        
 }

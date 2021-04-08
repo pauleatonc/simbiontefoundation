@@ -1,0 +1,67 @@
+<body>
+<div class="wrapper">
+   <header>
+      <nav>
+         <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+         </div>
+         <div class="logo logo-image">
+            <%= image_tag 'Logo_Simbionte.png', :size => '80x64' %>
+         </div>
+         <div class="menu">
+            <ul>
+               <li>
+                <a href="<%= root_path %>">
+                  <i class="fas fa-user"></i>
+                  <div>Home</div>
+                  </a>
+                </li>
+               <li>
+                <a href="#">Hacerca del proyecto
+                  </a>
+                </li>
+               <li>
+                <a href="#">Contacto</a>
+                </li>
+
+                <% if user_signed_in? %>
+
+                  <li><a href="#">Dashboard</a></li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-user-check"></i>
+                        <div><%= current_user.email %></div>
+                      </a>
+                    </li>
+      
+                    <li>
+                        <%= link_to destroy_user_session_path, method: :delete do %>
+                        <i class="fas fa-sign-out-alt"></i>
+                        <div>Salir</div>
+      
+                      <% end %>
+
+                    </li>
+
+                  <% else %>
+
+                    <li>
+                      <a href="<%= new_user_session_path %>">
+                        <i class="fas fa-user"></i>
+                        <div>Ingresar</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<%= new_user_registration_path %>">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <div>Registrarse</div>
+                      </a>
+                    </li>
+                <% end %>
+                
+            </ul>
+         </div>
+      </nav>
+   </header>
+</div>
+</body>

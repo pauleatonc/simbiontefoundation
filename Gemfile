@@ -5,10 +5,6 @@ ruby '2.7.1'
 
 # Devise
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
-# Omniauth
-gem 'omniauth', '~> 2.0'
-# Omniauth
-gem "omniauth-rails_csrf_protection"
 # Omniauth2
 gem 'omniauth-google-oauth2'
 # jQuery

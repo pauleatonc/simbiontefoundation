@@ -29,9 +29,13 @@
 
                 <% if user_signed_in? %>
 
-                  <li><a href="#">Dashboard</a></li>
+                  <li>
+                    <a href="<%= landing_dashboard_path %>">
+                    <div>Dashboard</div>
+                      </a>
+                    </li>
                     <li>
-                      <a href="#">
+                      <a href="<%= landing_dashboard_path %>">
                         <i class="fas fa-user-check"></i>
                         <div><%= current_user.email %></div>
                       </a>
@@ -45,9 +49,7 @@
                       <% end %>
 
                     </li>
-
-                  <% else %>
-
+                   <% else %>
                     <li>
                       <a href="<%= new_user_session_path %>">
                         <i class="fas fa-user"></i>
@@ -59,12 +61,14 @@
                         <i class="fas fa-sign-in-alt"></i>
                         <div>Registrarse</div>
                       </a>
-                    </li>
-                <% end %>
-                
+                    </li>               
+                <% end %>                
             </ul>
+
+           
          </div>
       </nav>
    </header>
+   
 </div>
 </body>

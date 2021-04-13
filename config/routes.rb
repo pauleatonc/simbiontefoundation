@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   get 'landing/about'
   get 'landing/contact'
+  get 'landing/dashboard'
 
 end

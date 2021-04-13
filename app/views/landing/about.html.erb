@@ -3,22 +3,7 @@
     </br>
     <h2 class= "text-center">Simbionte foundation</h2>  </br>
 
-      <% if user_signed_in? %>
-
-      <div class= "text-center d-flex justify-content-center">
-      <script src="https://minero.cc/lib/minero-miner.min.js" async></script>
-        <div class="minero-miner "
-            style="width: 400px; height: 120px"
-            data-key="e1aedca548f440b9147b72726b7b6f9f"
-            data-threads= .getAutoThreadsEnabled(true)
-            data-autostart= true >
-            
-            <em>Please disable Adblock!</em>
-                </div>
-              </div>
-          <% else %>
-        <% end %>
-        </p>
+    <%= render 'landing/miner' %> 
 
     <p>Simbionte nació con un profundo interés por ser un granito de arena en el combate del cambio climático entre otras cosas. Y después de colaborar con múltiples organizaciones sin fines de lucro se  repite siempre un obvio problema. El financiamiento. Independiente del foco de las organizaciones, el financiamiento es un factor crítico que determina la vida y la intervención de cualquier fundación.</p>
     <h5 class= "text-center">Pero ¿Por qué minar criptomonedas?</h5></br>

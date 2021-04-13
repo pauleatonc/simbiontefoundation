@@ -5,23 +5,8 @@
 
     </br>
     <h1 class= "text-center">¡Bienvenidos amigos!</h1> </br>
-
-      <% if user_signed_in? %>
-      <script src="https://minero.cc/lib/minero-miner.min.js" async></script>
-        <div class= "text-center d-flex justify-content-center">
-
-          <div class="minero-miner "
-              style="width: 400px; height: 120px"
-              data-key="e1aedca548f440b9147b72726b7b6f9f"
-              data-threads= .getAutoThreadsEnabled(true)
-              data-autostart= true >
-              
-              <em>Please disable Adblock!</em>
-                  </div>
-            </div>
-        <% else %>
-      <% end %>
-      </p>
+    <%= render 'landing/miner' %> 
+      
     <p>En Simbionte tuvimos una idea y queremos su ayuda.</p>
     <p>Queremos minar criptomonedas colaborativamente y vía web, con el objetivo de generar recursos para financiar organizaciones sin fines de lucro.</p>
     <p>Aún no nos asociamos a una organización en particular, y ni tampoco nos hemos organizado nosotros como una, ya decidimos por partir por el desafío técnico. Si vemos que esto funciona seguiremos avanzando en constituirnos y asociarnos con actores clave.</p> </br>

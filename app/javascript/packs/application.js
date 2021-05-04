@@ -2,17 +2,18 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+require("jquery")
 
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-require("packs/chart")
+require("packs/jquery-3.2.1.min.js")
+require("packs/chart.min")
+require("packs/jquery.cookie-1.4.1.min")
 require("packs/gustav")
-require("packs/jquery-3.2.1")
-require("packs/jquery.cookie-1.4.1")
-require("packs/karma.min.js")
+require("packs/karma.min.js")   
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

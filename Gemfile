@@ -12,9 +12,9 @@ gem "omniauth-rails_csrf_protection"
 # Omniauth2
 gem 'omniauth-google-oauth2'
 # jQuery
-gem 'jquery-rails'
+# gem 'jquery-rails'
 # Bootstrap
-gem 'bootstrap', '~> 4.3.1'
+# gem 'bootstrap', '~> 4.3.1'
 # Devise Bootstrap Views
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
